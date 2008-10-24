@@ -1,0 +1,48 @@
+{% load faszkorbacs %}
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>{% block title %}FaszkorbacsBlog{% endblock %}</title>
+    <link rel="SHORTCUT ICON" href="{% root_url %}/media/images/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{% root_url %}/feeds/rss" />
+    {% block styles %}
+    <link rel="stylesheet" type="text/css" href="{% root_url %}/media/css/style.css" />
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <script language="javascript">
+    <!-- 
+    function clearDefault(obj) {
+        if (!obj._cleared) {
+            obj.value='';
+            obj._cleared=true;
+        }
+    }
+    // -->
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"> </div>
+        <div id="body">
+            <div id="content"> 
+                {% block content %} {% endblock %}
+            </div>
+            <div id="left">
+                <form action="{% root_url %}/search" method="get" >
+                    <input type="text" name="q" onFocus="clearDefault(this)" value="Keresés.."/>
+                    <input type="submit" value="OK" />
+                </form>
+                {% block left %}
+                {% endblock %}
+            </div>
+        </div>
+        <div id="footer"><span>[ asdfg | qwert | zxcvb ]</span></div>
+    </div>
+</body>
+</html>

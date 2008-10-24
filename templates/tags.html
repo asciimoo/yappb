@@ -1,0 +1,8 @@
+{% load faszkorbacs %}
+<fieldset id="tags">
+    <legend>Tagek</legend>
+    {% for tag in tags %}
+        <a href="{% root_url %}/tags/{{ tag }}" title="{{ tag }}">{{ tag }}</a>, 
+    {% endfor %}
+</fieldset>
+

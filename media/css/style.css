@@ -1,0 +1,31 @@
+body { background: #000000  url(../images/stripes.png); color: #00F1DD; }
+div#wrapper { width: 900px; min-height: 100%; _height: 100%; margin-left: auto; margin-right: auto; padding: 0; position: relative; }
+div#header { height: 180px; width: 900px; background: url(../images/header_back.png); }
+div#body { width: 900px;  background: url(../images/body_back.png) repeat-y; overflow: hidden;}
+div#content { width: 620px; margin-left: 230px; }
+div#left {  width: 200px; position: absolute; top: 200px; left: 30px; vertical-align: top; }
+div#footer { vertical-align: text-bottom; height: 180px; width: 900px; background: url(../images/footer_back.png) no-repeat; text-align: center; }
+div#add_comment { margin-bottom: 30px; }
+div.post_footer { border-bottom: 1px  solid #F810E5; border-top: 1px solid #F810E5; margin: 0;  }
+div.post { margin-left: 10px; }
+div.comment { margin-left: 20px; }
+div.comment_footer { text-align: right; font-size: 0.8em; margin: 0; padding: 0; }
+div.captcha { margin-left: 24px;  padding: 10px; }
+fieldset { border: 1px solid #00F1DD; -moz-border-radius: 10px; border-radius: 10px; }
+fieldset#tags { width: 140px; margin-top: 26px; }
+fieldset.entry { margin-bottom: 20px; }
+fieldset.entry legend h1 { font-size: 1.9em; margin: 0; padding: 0; font-weight: normal; }
+a { color: #F810E5; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h2 { margin: 0; }
+h2.title { font-size: 1.8em; }
+h3.author { margin: 0; margin-top: 10px;  font-size: 0.8em; text-align: right; }
+h4 { margin: 4px; padding: 0; color: #F810E5; }
+hr { color: #00F1DD; }
+input[type=text]  { width: 120px; border: 1px solid #00F1DD; background: transparent; color: #F810E5; margin: 2px; }
+input[type=password]  { width: 120px; border: 1px solid #00F1DD; background: transparent; color: #F810E5; margin: 2px; }
+input[type=submit]  { width: 80px; height: 30px; border: 1px solid #00F1DD; background: transparent; color: #00FFFF; margin: 2px; margin-left: 44px; }
+input:hover, textarea:hover { border: 1px solid #F810E5; }
+textarea { background: transparent; border: 1px solid #00F1DD; color: #F810E5; }
+div.box { min-height: 200px; width: 200px; background: url(../images/box_back.png) repeat-y; padding: 2px; padding-left: 12px; }
+span.small { font-size: 0.8em; }

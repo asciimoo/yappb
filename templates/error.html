@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load faszkorbacs %}
+{% block content %}
+{% for post in posts %}
+    <div class="entry">
+        <h2 class="title"><a href="{% root_url %}/{{ post.id }}/{{ post.get_nice_url }}">{{ post.title }}</a> - {{ post.author }}</h2>
+        <div class="summary">{{ post.get_summary }}</div>
+        <p class="date">{{ post.date }}</p>
+        {% for tag in post.tags.all %}
+        <a href="{% root_url %}/tag/{{ tag }}" title="{{ tag }}">{{ tag }}</a>  
+        {% endfor %}
+    </div>
+{% endfor %}
+{% endblock %}

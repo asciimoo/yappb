@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load faszkorbacs %}
+{% block content %}
+<h3>A '{{ tag }}' taggel ellátott postok:</h3>
+{% for post in posts %}
+    <a href="{% root_url %}/{{ post.id }}/{{ post.title }}" title="{{ post.title }}">{{ post.title }}</a><br />
+{% endfor %}
+{% endblock %}

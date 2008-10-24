@@ -1,0 +1,8 @@
+{% load faszkorbacs %}
+<div id="add_comment">
+    <form action="{% root_url %}/add_comment/{{ post.get_id }}" method="post">
+        {{ comment_form.as_div }}
+        <div class="captcha"><img src="{% root_url %}/captcha/"/></div>
+        <input type="submit" value="OK">
+    </form>
+</div>

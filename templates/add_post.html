@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load faszkorbacs %}
+{% block content %}
+<h1>New post</h1>
+<form action="{% root_url %}/add_post" method="POST">
+{{ form.as_div }}
+<input type="submit" value="OK">
+</form>
+{% endblock %}
